@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI-Native Bioinformatics: Faculty Development Programme · IISc Bangalore</title>
+  <meta name="description" content="A 5-day, hands-on Faculty Development Programme on AI-Native Bioinformatics, Computational Biology & Drug Discovery. Build one Target → Hit pipeline, one stage per day." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="dot"></span> AI-Native Bioinformatics</a>
+      <nav class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#pipeline">Pipeline</a>
+        <a href="#curriculum">Curriculum</a>
+        <a href="#prerequisites">Setup</a>
+        <a href="#capstone">Capstone</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Faculty Development Programme · 5 days / 30 contact hours</p>
+      <h1>AI-Native Bioinformatics, Computational Biology &amp; Drug Discovery</h1>
+      <p class="lead">A hands-on programme where each session adds one stage to a single working
+        pipeline, from a protein target to a ranked list of candidate molecules.</p>
+      <div class="meta-line">
+        <span><strong>Dept. of Computational and Data Sciences</strong>, IISc Bangalore</span>
+        <span class="sep">·</span>
+        <span>For faculty of <strong>NIELIT</strong></span>
+        <span class="sep">·</span>
+        <span>15 sessions × 2 hours</span>
+      </div>
+      <div class="btn-row">
+        <a class="btn" href="#curriculum">View curriculum</a>
+        <a class="btn ghost" href="#pipeline">The pipeline</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section class="section" id="overview">
+    <div class="wrap">
+      <p class="eyebrow">Overview</p>
+      <div class="prose">
+        <p>Most workshops tour a dozen tools and hope a few stick. We do the opposite. Everyone
+          builds one pipeline, one stage a day, so each new idea has somewhere to live. By Friday,
+          every team has generated molecules, docked them, and ranked them.</p>
+        <p>We pick one tool per job, the best free option, so the whole room runs the same stack.
+          Each session is a short lecture plus a lab. The worked example is <strong>EGFR</strong>
+          in non-small-cell lung cancer, but teams can bring their own target.</p>
+      </div>
+      <div class="deflist">
+        <div class="row"><dt>Mode</dt><dd>A short lecture plus a hands-on lab, every session.</dd></div>
+        <div class="row"><dt>Structure</dt><dd>15 sessions of two hours, all building one capstone.</dd></div>
+        <div class="row"><dt>Instructors</dt><dd>Prof. Debnath Pal and Bikram Panda. Hands-on: Push Lochan.</dd></div>
+        <div class="row"><dt>Capstone</dt><dd>An AI-native Target to Hit pipeline, built one stage a day.</dd></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PIPELINE -->
+  <section class="section" id="pipeline">
+    <div class="wrap">
+      <p class="eyebrow">The capstone pipeline</p>
+      <h2>Target → Hit</h2>
+      <p class="lead prose">The map we come back to all week. Each stage hands off to the next,
+        from a target name to a ranked hit list.</p>
+
+      <ol class="pipeline">
+        <li class="stage">
+          <span class="stage-day">Day 1 · Target brief</span>
+          <h3>Literature-mined target dossier + known actives</h3>
+          <p>Frame the target and seed a list of known active compounds.</p>
+          <p class="tools">Claude · PubMedBERT</p>
+        </li>
+        <li class="stage">
+          <span class="stage-day">Day 2 · Data layer</span>
+          <h3>AI-coded fetchers: sequence, structure, known actives</h3>
+          <p>Write the code that pulls clean data from UniProt, the PDB, and ChEMBL.</p>
+          <p class="tools">Cursor / Antigravity · Biopython · RDKit</p>
+        </li>
+        <li class="stage">
+          <span class="stage-day">Day 3 · Knowledge engine</span>
+          <h3>RAG + agent target brief (pocket, chemotypes)</h3>
+          <p>Give the pipeline a memory that reads the literature and writes a brief.</p>
+          <p class="tools">LangChain + ChromaDB · LangGraph</p>
+        </li>
+        <li class="stage">
+          <span class="stage-day">Day 4 · Target prep</span>
+          <h3>Annotated target + defined binding pocket</h3>
+          <p>Characterise the protein and prepare a structure that is ready to dock.</p>
+          <p class="tools">ESM-2 · ColabFold</p>
+        </li>
+        <li class="stage">
+          <span class="stage-day">Day 5 · Hit finding</span>
+          <h3>Generated molecules → docked → ranked hit list</h3>
+          <p>Generate candidates, dock them to the pocket, and rank them.</p>
+          <p class="tools">REINVENT4 · DiffDock · RDKit</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section class="section" id="schedule">
+    <div class="wrap">
+      <p class="eyebrow">Daily schedule</p>
+      <h2>Six contact hours a day</h2>
+      <table class="tbl">
+        <thead><tr><th>Time</th><th>Activity</th></tr></thead>
+        <tbody>
+          <tr><td class="time">09:30-11:30</td><td>Session A: lecture + hands-on</td></tr>
+          <tr><td class="time">11:30-11:45</td><td>Tea break</td></tr>
+          <tr><td class="time">11:45-13:45</td><td>Session B: lecture + hands-on</td></tr>
+          <tr><td class="time">13:45-14:30</td><td>Lunch</td></tr>
+          <tr><td class="time">14:30-16:30</td><td>Session C: lecture + hands-on</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Contact hours/day = 6 → total = 30 over 5 days (breaks excluded).</p>
+    </div>
+  </section>
+
+  <!-- CURRICULUM -->
+  <section class="section" id="curriculum">
+    <div class="wrap">
+      <p class="eyebrow">Curriculum</p>
+      <h2>Five days, one pipeline</h2>
+      <p class="lead prose">Each day delivers one stage. Open a day for its sessions, tools, and
+        what your team builds.</p>
+
+      <div class="cards">
+        <a class="card" href="day1.html">
+          <span class="card-day">Day 1</span>
+          <h3>Foundations &amp; Target Framing</h3>
+          <p>Set up the stack, frame a target, and write a structured dossier with a seed list of
+            known actives.</p>
+          <span class="card-go">Open Day 1 →</span>
+        </a>
+        <a class="card" href="day2.html">
+          <span class="card-day">Day 2</span>
+          <h3>Build the Data Layer</h3>
+          <p>Scaffold the repo and let AI write the fetchers for sequence, structure, and
+            chemistry data.</p>
+          <span class="card-go">Open Day 2 →</span>
+        </a>
+        <a class="card" href="day3.html">
+          <span class="card-day">Day 3</span>
+          <h3>Knowledge Engine</h3>
+          <p>Build a vector store over the literature and an agent that writes a focused target
+            brief.</p>
+          <span class="card-go">Open Day 3 →</span>
+        </a>
+        <a class="card" href="day4.html">
+          <span class="card-day">Day 4</span>
+          <h3>Characterize the Target</h3>
+          <p>Embed and annotate the target, score mutations, and prepare the binding pocket.</p>
+          <span class="card-go">Open Day 4 →</span>
+        </a>
+        <a class="card" href="day5.html">
+          <span class="card-day">Day 5</span>
+          <h3>Generate, Dock, Rank + Capstone</h3>
+          <p>Generate molecules, dock and rank them, then assemble the whole pipeline and present.</p>
+          <span class="card-go">Open Day 5 →</span>
+        </a>
+        <a class="card" href="day1.html#outcomes">
+          <span class="card-day">Outcomes</span>
+          <h3>What you walk away with</h3>
+          <p>A working hit-finding pipeline, and the confidence to take these methods back to your
+            students.</p>
+          <span class="card-go">See learning outcomes →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREREQUISITES & SETUP -->
+  <section class="section" id="prerequisites">
+    <div class="wrap">
+      <p class="eyebrow">Before the programme</p>
+      <h2>Prerequisites &amp; setup</h2>
+      <div class="prose">
+        <p>The labs assume a little Python. No cheminformatics background needed. Twenty minutes of
+          setup beforehand keeps the room moving.</p>
+      </div>
+
+      <h3 style="margin-top:2rem">Prerequisites</h3>
+      <table class="tbl">
+        <tbody>
+          <tr><td>Basic understanding of molecular biology and bioinformatics.</td></tr>
+          <tr><td>Basic Python: variables, loops, functions, installing packages.</td></tr>
+          <tr><td>Familiarity with Jupyter / Colab notebooks. No prior cheminformatics needed.</td></tr>
+          <tr><td>A Google account and a Hugging Face account (for model weights).</td></tr>
+        </tbody>
+      </table>
+
+      <h3 style="margin-top:2.25rem">Pre-workshop requirements</h3>
+      <div class="deflist">
+        <div class="row"><dt>Compute</dt><dd>A GPU (incl. NVIDIA H200) so ESM-2, DiffDock and ColabFold run live; cached outputs as a time backup.</dd></div>
+        <div class="row"><dt>LLM access</dt><dd>Claude API key (Pro plan); Gemini free tier as a no-cost fallback.</dd></div>
+        <div class="row"><dt>AI IDE</dt><dd>Cursor or Google Antigravity (free tiers are enough; both drive frontier models for you).</dd></div>
+        <div class="row"><dt>Model access</dt><dd>Hugging Face account for ESM-2 weights.</dd></div>
+        <div class="row"><dt>Python env</dt><dd>Python 3.10+, conda/venv; torch, transformers, fair-esm, langchain, langgraph, chromadb, biopython, rdkit; REINVENT4; DiffDock deps.</dd></div>
+        <div class="row"><dt>Data / APIs</dt><dd>UniProt, RCSB PDB, ChEMBL, NCBI E-utilities; a shared target dataset folder.</dd></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPSTONE & ASSESSMENT -->
+  <section class="section" id="capstone">
+    <div class="wrap">
+      <p class="eyebrow">Capstone &amp; assessment</p>
+      <h2>One pipeline, built cumulatively</h2>
+      <div class="prose">
+        <p>The capstone runs through the whole week: build the Target to Hit pipeline for a target
+          you choose. You assemble it one stage a day. The deliverable is a working pipeline, a
+          ranked hit list with docking scores, and a short demo.</p>
+      </div>
+      <div class="deflist">
+        <div class="row"><dt>Attendance</dt><dd>Presence across the five days.</dd></div>
+        <div class="row"><dt>Daily labs</dt><dd>Each session delivers its pipeline stage (Stages 1-5).</dd></div>
+        <div class="row"><dt>Capstone</dt><dd>Integrated pipeline + ranked hits + presentation.</dd></div>
+        <div class="row"><dt>Certificate</dt><dd>Issued on attendance and capstone completion.</dd></div>
+      </div>
+      <div class="callout">
+        <p class="eyebrow">In one line</p>
+        <p>More than any single tool, we want you to leave seeing how the pieces fit, and confident
+          enough to teach this to your own students.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <div>
+        <p class="label">Programme</p>
+        <p>Faculty Development Programme: AI-Native Bioinformatics,<br />Computational Biology &amp; Drug Discovery</p>
+        <p class="muted">Dept. of Computational and Data Sciences, IISc Bangalore 560 012</p>
+      </div>
+      <div>
+        <p class="label">Instructors</p>
+        <p>Prof. Debnath Pal · Bikram Panda</p>
+        <p class="muted">Hands-on support: Push Lochan</p>
+      </div>
+      <div>
+        <p class="label">Source</p>
+        <p><a href="https://github.com/bpanda-dev/tot2">github.com/bpanda-dev/tot2</a></p>
+        <p class="muted">Hosted with GitHub Pages</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

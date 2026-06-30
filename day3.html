@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day 3: Knowledge Engine for the Target · AI-Native Bioinformatics</title>
+  <meta name="description" content="Day 3: RAG and agents. Build a vector store over the target's literature and a multi-agent system that synthesises a focused brief on the pocket and chemotypes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="dot"></span> AI-Native Bioinformatics</a>
+      <nav class="nav-links">
+        <a href="day1.html">Day 1</a>
+        <a href="day2.html">Day 2</a>
+        <a href="day3.html">Day 3</a>
+        <a href="day4.html">Day 4</a>
+        <a href="day5.html">Day 5</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Day 3 · Stage 3: Knowledge engine</p>
+      <h1>Knowledge Engine for the Target</h1>
+      <p class="lead prose">Raw data is not knowledge yet. Today you give the pipeline a memory: a
+        retrieval system that reads the literature, and an agent that pulls it together into a
+        focused brief on the binding pocket and chemistry.</p>
+      <div class="meta-line">
+        <span><strong>Theme</strong> RAG &amp; agents</span>
+        <span class="sep">·</span>
+        <span><strong>Tools</strong> LangChain + ChromaDB · LangGraph</span>
+        <span class="sep">·</span>
+        <span><strong>Deliverable</strong> Stage 3 target brief</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="kicker-rule"></div>
+
+      <article class="session">
+        <div class="session-head">
+          <span class="session-tag">Session 7</span>
+          <span class="session-time">09:30-11:30</span>
+        </div>
+        <h3>RAG architecture</h3>
+        <p class="prose">Embeddings, vector databases, and semantic search: the building blocks of
+          RAG.</p>
+        <div class="tags">
+          <span class="tag tool">LangChain</span>
+          <span class="tag tool">ChromaDB</span>
+          <span class="tag">Embeddings</span>
+          <span class="tag">Vector databases</span>
+          <span class="tag">Semantic search</span>
+        </div>
+        <div class="handson">
+          <strong>Hands-on</strong>
+          Build a vector store over the target’s literature; a minimal RAG question-and-answer loop.
+        </div>
+      </article>
+
+      <article class="session">
+        <div class="session-head">
+          <span class="session-tag">Session 8</span>
+          <span class="session-time">11:45-13:45</span>
+        </div>
+        <h3>RAG over biological databases</h3>
+        <p class="prose">Retrieval across PubMed, UniProt, ChEMBL, ClinVar, OMIM, and PharmGKB to
+          build a knowledge assistant for your target.</p>
+        <div class="tags">
+          <span class="tag tool">LangChain + bio APIs</span>
+          <span class="tag">PubMed · UniProt · ChEMBL</span>
+          <span class="tag">ClinVar · OMIM · PharmGKB</span>
+        </div>
+        <div class="handson">
+          <strong>Hands-on</strong>
+          A target knowledge assistant: retrieve binding site, known chemotypes and resistance mutations.
+        </div>
+      </article>
+
+      <article class="session">
+        <div class="session-head">
+          <span class="session-tag">Session 9</span>
+          <span class="session-time">14:30-16:30</span>
+        </div>
+        <h3>Agentic AI</h3>
+        <p class="prose">Multi-agent retrieval and analysis, and automated synthesis. Agents that
+          research, reason, and write.</p>
+        <div class="tags">
+          <span class="tag tool">LangGraph</span>
+          <span class="tag">Multi-agent</span>
+          <span class="tag">Automated synthesis</span>
+        </div>
+        <div class="handson">
+          <strong>Hands-on · Stage 3</strong>
+          A research agent outputs a structured target brief: pocket, chemotypes and constraints.
+        </div>
+      </article>
+
+      <div class="callout" id="outcomes">
+        <p class="eyebrow">Learning outcome</p>
+        <p>Build a RAG and agent knowledge engine for a biological target.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <nav class="pager">
+        <a href="day2.html"><span class="small">Previous</span>← Day 2: Build the Data Layer</a>
+        <a class="next" href="day4.html"><span class="small">Next</span>Day 4: Characterize the Target →</a>
+      </nav>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div>
+        <p class="label">Programme</p>
+        <p>AI-Native Bioinformatics, Computational Biology &amp; Drug Discovery</p>
+        <p class="muted">Dept. of Computational and Data Sciences, IISc Bangalore</p>
+      </div>
+      <div>
+        <p class="label">Navigate</p>
+        <p><a href="index.html">Overview</a> · <a href="day1.html">Day 1</a> · <a href="day2.html">Day 2</a> · <a href="day4.html">Day 4</a> · <a href="day5.html">Day 5</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

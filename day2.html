@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day 2: Build the Data Layer · AI-Native Bioinformatics</title>
+  <meta name="description" content="Day 2: AI-assisted programming. Scaffold the capstone repo and generate fetchers for sequence, structure and chemistry data, then orchestrate them with function calling." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="dot"></span> AI-Native Bioinformatics</a>
+      <nav class="nav-links">
+        <a href="day1.html">Day 1</a>
+        <a href="day2.html">Day 2</a>
+        <a href="day3.html">Day 3</a>
+        <a href="day4.html">Day 4</a>
+        <a href="day5.html">Day 5</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Day 2 · Stage 2: Data layer</p>
+      <h1>Build the Data Layer</h1>
+      <p class="lead prose">With a target in hand, build the plumbing: code that fetches sequences,
+        structures, and known compounds. Lean on an AI coding assistant (Cursor, Antigravity, or
+        Copilot) for the boilerplate, and spend your attention on keeping the data clean.</p>
+      <div class="meta-line">
+        <span><strong>Theme</strong> AI-assisted programming</span>
+        <span class="sep">·</span>
+        <span><strong>Tools</strong> Cursor / Antigravity · Biopython · RDKit</span>
+        <span class="sep">·</span>
+        <span><strong>Deliverable</strong> Stage 2 clean data tables</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="kicker-rule"></div>
+
+      <article class="session">
+        <div class="session-head">
+          <span class="session-tag">Session 4</span>
+          <span class="session-time">09:30-11:30</span>
+        </div>
+        <h3>AI coding assistants</h3>
+        <p class="prose">Prompt-to-code, prompt-to-pipeline, AI debugging, and using an LLM to
+          review your own code. Vibe coding done well.</p>
+        <div class="tags">
+          <span class="tag tool">Cursor / Antigravity</span>
+          <span class="tag">Prompt-to-code</span>
+          <span class="tag">AI debugging</span>
+          <span class="tag">LLM code review</span>
+        </div>
+        <div class="handson">
+          <strong>Hands-on</strong>
+          Scaffold the capstone repo with AI; write the first UniProt fetch script.
+        </div>
+      </article>
+
+      <article class="session">
+        <div class="session-head">
+          <span class="session-tag">Session 5</span>
+          <span class="session-time">11:45-13:45</span>
+        </div>
+        <h3>Generating I/O code</h3>
+        <p class="prose">UniProt and NCBI downloaders, PDB fetching, ChEMBL queries, FASTA parsing,
+          and SMILES handling, written with AI and grounded in Biopython and RDKit.</p>
+        <div class="tags">
+          <span class="tag tool">Biopython</span>
+          <span class="tag tool">RDKit</span>
+          <span class="tag">UniProt / NCBI</span>
+          <span class="tag">RCSB PDB</span>
+          <span class="tag">ChEMBL</span>
+        </div>
+        <div class="handson">
+          <strong>Hands-on · Stage 2</strong>
+          AI-generate fetchers for sequence, structure (PDB) and known actives (ChEMBL) → clean data tables.
+        </div>
+      </article>
+
+      <article class="session">
+        <div class="session-head">
+          <span class="session-tag">Session 6</span>
+          <span class="session-time">14:30-16:30</span>
+        </div>
+        <h3>LLM APIs &amp; function calling</h3>
+        <p class="prose">Wrap your fetchers as callable tools and let an LLM run the workflow. The
+          step from scripts you run by hand to an assistant that runs them.</p>
+        <div class="tags">
+          <span class="tag tool">Claude API</span>
+          <span class="tag">Function calling</span>
+          <span class="tag">Tool use</span>
+          <span class="tag">Orchestration</span>
+        </div>
+        <div class="handson">
+          <strong>Hands-on</strong>
+          Wrap fetchers as callable tools; build an LLM assistant that drives data collection end-to-end.
+        </div>
+      </article>
+
+      <div class="callout" id="outcomes">
+        <p class="eyebrow">Learning outcome</p>
+        <p>Use AI coding assistants to build sequence, structure, and chemistry data pipelines.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <nav class="pager">
+        <a href="day1.html"><span class="small">Previous</span>← Day 1: Foundations &amp; Target Framing</a>
+        <a class="next" href="day3.html"><span class="small">Next</span>Day 3: Knowledge Engine →</a>
+      </nav>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div>
+        <p class="label">Programme</p>
+        <p>AI-Native Bioinformatics, Computational Biology &amp; Drug Discovery</p>
+        <p class="muted">Dept. of Computational and Data Sciences, IISc Bangalore</p>
+      </div>
+      <div>
+        <p class="label">Navigate</p>
+        <p><a href="index.html">Overview</a> · <a href="day1.html">Day 1</a> · <a href="day3.html">Day 3</a> · <a href="day4.html">Day 4</a> · <a href="day5.html">Day 5</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

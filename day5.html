@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day 5: Generate, Dock, Rank + Capstone · AI-Native Bioinformatics</title>
+  <meta name="description" content="Day 5: Generative chemistry. Generate candidate molecules with REINVENT4, dock and rank them with DiffDock, and assemble the full end-to-end pipeline." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="dot"></span> AI-Native Bioinformatics</a>
+      <nav class="nav-links">
+        <a href="day1.html">Day 1</a>
+        <a href="day2.html">Day 2</a>
+        <a href="day3.html">Day 3</a>
+        <a href="day4.html">Day 4</a>
+        <a href="day5.html">Day 5</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Day 5 · Stage 5: Hit finding</p>
+      <h1>Generate, Dock, Rank + Capstone</h1>
+      <p class="lead prose">Today it comes together. Generate fresh molecules, dock and rank them
+        against your pocket, then wire the whole week into one pipeline and show it. REINVENT4 makes
+        the molecules; DiffDock docks them.</p>
+      <div class="meta-line">
+        <span><strong>Theme</strong> Generative chemistry</span>
+        <span class="sep">·</span>
+        <span><strong>Tools</strong> REINVENT4 · DiffDock · RDKit</span>
+        <span class="sep">·</span>
+        <span><strong>Deliverable</strong> Stage 5 ranked hits + demo</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="kicker-rule"></div>
+
+      <article class="session">
+        <div class="session-head">
+          <span class="session-tag">Session 13</span>
+          <span class="session-time">09:30-11:30</span>
+        </div>
+        <h3>Molecular generative models</h3>
+        <p class="prose">Molecular transformers, VAEs, GANs, diffusion, and reinforcement learning
+          for molecules, then filtering candidates for drug-likeness.</p>
+        <div class="tags">
+          <span class="tag tool">REINVENT4</span>
+          <span class="tag tool">RDKit</span>
+          <span class="tag">VAEs · GANs · diffusion</span>
+          <span class="tag">RL for molecules</span>
+        </div>
+        <div class="handson">
+          <strong>Hands-on</strong>
+          Generate candidate molecules (optionally scaffold-conditioned); filter by Lipinski / QED.
+        </div>
+      </article>
+
+      <article class="session">
+        <div class="session-head">
+          <span class="session-tag">Session 14</span>
+          <span class="session-time">11:45-13:45</span>
+        </div>
+        <h3>Structure-based docking</h3>
+        <p class="prose">Dock candidates into the pocket, score the poses, and screen for ADMET and
+          safety liabilities.</p>
+        <div class="tags">
+          <span class="tag tool">DiffDock</span>
+          <span class="tag tool">RDKit</span>
+          <span class="tag">Scoring</span>
+          <span class="tag">ADMET / safety</span>
+        </div>
+        <div class="handson">
+          <strong>Hands-on</strong>
+          Dock candidates to the pocket; score and rank; flag ADMET liabilities.
+        </div>
+      </article>
+
+      <article class="session">
+        <div class="session-head">
+          <span class="session-tag">Session 15</span>
+          <span class="session-time">14:30-16:30</span>
+        </div>
+        <h3>End-to-end assembly</h3>
+        <p class="prose">Wire the full pipeline together: target brief, target and pocket
+          (ESM-2 + ColabFold), molecule generation, docking, scoring. Then present it.</p>
+        <div class="tags">
+          <span class="tag tool">Integrated stack</span>
+          <span class="tag">End-to-end pipeline</span>
+          <span class="tag">Presentations</span>
+        </div>
+        <div class="handson">
+          <strong>Hands-on · Stage 5</strong>
+          Run the full pipeline on the team’s target → ranked hits + a short presentation.
+        </div>
+      </article>
+
+      <div class="callout" id="outcomes">
+        <p class="eyebrow">Learning outcome</p>
+        <p>Generate candidate molecules, dock and rank them, and assemble an end-to-end hit-finding
+          pipeline.</p>
+      </div>
+
+      <div class="callout" style="margin-top:1rem">
+        <p class="eyebrow">Capstone</p>
+        <p>The week's deliverable: a working Target to Hit pipeline for your target, with a ranked
+          hit list and docking scores, plus a short demo. Built one stage a day.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <nav class="pager">
+        <a href="day4.html"><span class="small">Previous</span>← Day 4: Characterize the Target</a>
+        <a class="next" href="index.html"><span class="small">Back</span>Programme overview →</a>
+      </nav>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div>
+        <p class="label">Programme</p>
+        <p>AI-Native Bioinformatics, Computational Biology &amp; Drug Discovery</p>
+        <p class="muted">Dept. of Computational and Data Sciences, IISc Bangalore</p>
+      </div>
+      <div>
+        <p class="label">Navigate</p>
+        <p><a href="index.html">Overview</a> · <a href="day1.html">Day 1</a> · <a href="day2.html">Day 2</a> · <a href="day3.html">Day 3</a> · <a href="day4.html">Day 4</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

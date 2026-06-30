@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day 4: Characterize the Target · AI-Native Bioinformatics</title>
+  <meta name="description" content="Day 4: Protein foundation models. Embed and annotate the target with ESM-2, score mutations, and prepare a docking-ready binding pocket with ColabFold." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="dot"></span> AI-Native Bioinformatics</a>
+      <nav class="nav-links">
+        <a href="day1.html">Day 1</a>
+        <a href="day2.html">Day 2</a>
+        <a href="day3.html">Day 3</a>
+        <a href="day4.html">Day 4</a>
+        <a href="day5.html">Day 5</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Day 4 · Stage 4: Target prep</p>
+      <h1>Characterize the Target</h1>
+      <p class="lead prose">Now the target itself. With a protein language model, characterize it,
+        annotate its domains, find the pocket, and score which mutations matter. Then prepare a
+        clean structure for docking. We are on small molecules this week, so protein-design tools
+        sit this one out.</p>
+      <div class="meta-line">
+        <span><strong>Theme</strong> Protein foundation models</span>
+        <span class="sep">·</span>
+        <span><strong>Tools</strong> ESM-2 · ColabFold · RDKit</span>
+        <span class="sep">·</span>
+        <span><strong>Deliverable</strong> Stage 4 docking-ready target</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="kicker-rule"></div>
+
+      <article class="session">
+        <div class="session-head">
+          <span class="session-tag">Session 10</span>
+          <span class="session-time">09:30-11:30</span>
+        </div>
+        <h3>Transformer architecture for proteins</h3>
+        <p class="prose">Protein foundation models and sequence embeddings: how a transformer
+          trained on millions of sequences learns protein language.</p>
+        <div class="tags">
+          <span class="tag tool">ESM-2</span>
+          <span class="tag">Protein foundation models</span>
+          <span class="tag">Sequence embeddings</span>
+        </div>
+        <div class="handson">
+          <strong>Hands-on</strong>
+          Load the model on GPU (H200); embed the target sequence.
+        </div>
+      </article>
+
+      <article class="session">
+        <div class="session-head">
+          <span class="session-tag">Session 11</span>
+          <span class="session-time">11:45-13:45</span>
+        </div>
+        <h3>Functional annotation</h3>
+        <p class="prose">Find the active site, predict mutation effects and resistance, and score
+          it all zero-shot from the model.</p>
+        <div class="tags">
+          <span class="tag tool">ESM-2</span>
+          <span class="tag">Active-site ID</span>
+          <span class="tag">Mutation effects</span>
+          <span class="tag">Zero-shot scoring</span>
+        </div>
+        <div class="handson">
+          <strong>Hands-on</strong>
+          Annotate domains; locate the pocket region; score key and resistance mutations.
+        </div>
+      </article>
+
+      <article class="session">
+        <div class="session-head">
+          <span class="session-tag">Session 12</span>
+          <span class="session-time">14:30-16:30</span>
+        </div>
+        <h3>Receptor structure prep for docking</h3>
+        <p class="prose">Prepare a receptor for docking, using ColabFold when there is no
+          experimental structure, and define the binding pocket.</p>
+        <div class="tags">
+          <span class="tag tool">ColabFold</span>
+          <span class="tag tool">RDKit</span>
+          <span class="tag">PDB</span>
+          <span class="tag">Pocket definition</span>
+        </div>
+        <div class="handson">
+          <strong>Hands-on · Stage 4</strong>
+          Prepare the receptor (PDB or ColabFold); define the pocket → a docking-ready target.
+        </div>
+      </article>
+
+      <div class="callout" id="outcomes">
+        <p class="eyebrow">Learning outcome</p>
+        <p>Use a protein foundation model to annotate a target, score mutations, and prepare a
+          binding pocket for docking.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <nav class="pager">
+        <a href="day3.html"><span class="small">Previous</span>← Day 3: Knowledge Engine</a>
+        <a class="next" href="day5.html"><span class="small">Next</span>Day 5: Generate, Dock, Rank →</a>
+      </nav>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div>
+        <p class="label">Programme</p>
+        <p>AI-Native Bioinformatics, Computational Biology &amp; Drug Discovery</p>
+        <p class="muted">Dept. of Computational and Data Sciences, IISc Bangalore</p>
+      </div>
+      <div>
+        <p class="label">Navigate</p>
+        <p><a href="index.html">Overview</a> · <a href="day1.html">Day 1</a> · <a href="day2.html">Day 2</a> · <a href="day3.html">Day 3</a> · <a href="day5.html">Day 5</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day 1: Foundations &amp; Target Framing · AI-Native Bioinformatics</title>
+  <meta name="description" content="Day 1: LLMs and prompt engineering. Set up the stack, frame a drug-discovery target, and produce a structured dossier with a seed list of known actives." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="dot"></span> AI-Native Bioinformatics</a>
+      <nav class="nav-links">
+        <a href="day1.html">Day 1</a>
+        <a href="day2.html">Day 2</a>
+        <a href="day3.html">Day 3</a>
+        <a href="day4.html">Day 4</a>
+        <a href="day5.html">Day 5</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Day 1 · Stage 1: Target brief</p>
+      <h1>Foundations &amp; Target Framing</h1>
+      <p class="lead prose">Get your bearings and frame the problem. Set up the tools, then put an
+        LLM to work turning a protein target into a clear, structured brief. By the end of the day
+        your team has a target, a dossier, and a first list of known active compounds.</p>
+      <div class="meta-line">
+        <span><strong>Theme</strong> LLMs + prompt engineering</span>
+        <span class="sep">·</span>
+        <span><strong>Tools</strong> Claude · PubMedBERT</span>
+        <span class="sep">·</span>
+        <span><strong>Deliverable</strong> Stage 1 dossier + known actives</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="kicker-rule"></div>
+
+      <article class="session">
+        <div class="session-head">
+          <span class="session-tag">Session 1</span>
+          <span class="session-time">09:30-11:30</span>
+        </div>
+        <h3>Evolution to AI-native bioinformatics</h3>
+        <p class="prose">Foundation models and the gen-AI landscape (GPT, Claude, Gemini), plus an
+          overview of the Target to Hit pipeline we build all week.</p>
+        <div class="tags">
+          <span class="tag tool">Claude</span>
+          <span class="tag">Foundation models</span>
+          <span class="tag">Gen-AI landscape</span>
+          <span class="tag">Pipeline overview</span>
+        </div>
+        <div class="handson">
+          <strong>Hands-on</strong>
+          Set up GPU and API keys; choose a target; the LLM drafts a structured target card.
+        </div>
+      </article>
+
+      <article class="session">
+        <div class="session-head">
+          <span class="session-tag">Session 2</span>
+          <span class="session-time">11:45-13:45</span>
+        </div>
+        <h3>Prompt-engineering principles</h3>
+        <p class="prose">Zero- and few-shot prompting, chain-of-thought, structured JSON output,
+          and how to tell a good prompt from a lucky one.</p>
+        <div class="tags">
+          <span class="tag tool">Claude</span>
+          <span class="tag">Zero / few-shot</span>
+          <span class="tag">Chain-of-thought</span>
+          <span class="tag">Structured output</span>
+          <span class="tag">Prompt evaluation</span>
+        </div>
+        <div class="handson">
+          <strong>Hands-on · Stage 1</strong>
+          Prompts for target biology, disease link and pathways → a validated target dossier (JSON).
+        </div>
+      </article>
+
+      <article class="session">
+        <div class="session-head">
+          <span class="session-tag">Session 3</span>
+          <span class="session-time">14:30-16:30</span>
+        </div>
+        <h3>Literature mining &amp; knowledge extraction</h3>
+        <p class="prose">Mine the literature for drug-target and gene-disease relations, and use
+          biomedical embeddings to search by meaning, not keywords.</p>
+        <div class="tags">
+          <span class="tag tool">Claude</span>
+          <span class="tag tool">PubMedBERT</span>
+          <span class="tag">Relation extraction</span>
+          <span class="tag">Embeddings</span>
+        </div>
+        <div class="handson">
+          <strong>Hands-on</strong>
+          Extract known inhibitors, chemotypes and binding info from abstracts → seed "known actives" list.
+        </div>
+      </article>
+
+      <div class="callout" id="outcomes">
+        <p class="eyebrow">Learning outcome</p>
+        <p>Frame a drug-discovery target and use prompt engineering to produce a structured dossier.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <nav class="pager">
+        <a href="index.html"><span class="small">Back</span>Programme overview</a>
+        <a class="next" href="day2.html"><span class="small">Next</span>Day 2: Build the Data Layer →</a>
+      </nav>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div>
+        <p class="label">Programme</p>
+        <p>AI-Native Bioinformatics, Computational Biology &amp; Drug Discovery</p>
+        <p class="muted">Dept. of Computational and Data Sciences, IISc Bangalore</p>
+      </div>
+      <div>
+        <p class="label">Navigate</p>
+        <p><a href="index.html">Overview</a> · <a href="day2.html">Day 2</a> · <a href="day3.html">Day 3</a> · <a href="day4.html">Day 4</a> · <a href="day5.html">Day 5</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
