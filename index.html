@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AI-Native Bioinformatics: Faculty Development Programme · IISc Bangalore</title>
-  <meta name="description" content="A 5-day, hands-on Faculty Development Programme on AI-Native Bioinformatics, Computational Biology & Drug Discovery. Build one Target → Hit pipeline, one stage per day." />
+  <meta name="description"
+    content="A 5-day, hands-on Faculty Development Programme on AI-Native Bioinformatics, Computational Biology & Drug Discovery. Build one Target → Hit pipeline, one stage per day." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body class="home">
 
   <header class="nav">
@@ -59,11 +64,27 @@
           session is a short talk, then a lab. Our worked example is <strong>EGFR</strong> in lung
           cancer. Bring your own target if you would rather.</p>
       </div>
-      <div class="deflist">
-        <div class="row"><dt>Mode</dt><dd>A short lecture plus a hands-on lab, every session.</dd></div>
-        <div class="row"><dt>Structure</dt><dd>15 sessions of two hours, all building one capstone.</dd></div>
-        <div class="row"><dt>Instructors</dt><dd>Prof. Debnath Pal and Bikram Panda. Hands-on: Push Lochan.</dd></div>
-        <div class="row"><dt>Capstone</dt><dd>An AI-native Target to Hit pipeline, built one stage a day.</dd></div>
+      <div class="sx-wrap">
+        <table class="sx">
+          <tbody>
+            <tr>
+              <td><span class="sx-title">Mode</span></td>
+              <td><span class="sx-desc">A short lecture plus a hands-on lab, every session.</span></td>
+            </tr>
+            <tr>
+              <td><span class="sx-title">Structure</span></td>
+              <td><span class="sx-desc">15 sessions of two hours, all building one capstone.</span></td>
+            </tr>
+            <tr>
+              <td><span class="sx-title">Instructors</span></td>
+              <td><span class="sx-desc">Prof. Debnath Pal and Bikram Panda. Hands-on: Push Lochan.</span></td>
+            </tr>
+            <tr>
+              <td><span class="sx-title">Capstone</span></td>
+              <td><span class="sx-desc">An AI-native Target to Hit pipeline, built one stage a day.</span></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
@@ -76,38 +97,49 @@
       <p class="lead prose">This is the map we keep coming back to. Each stage hands the work to the
         next. A target name goes in. A ranked hit list comes out.</p>
 
-      <table class="tbl pipeline-tbl">
-        <thead>
-          <tr><th>Stage</th><th>What you build</th><th>Tools</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="time"><strong>Day 1</strong><br />Target brief</td>
-            <td><strong>Literature-mined target dossier + known actives.</strong> Frame the target and seed a list of known active compounds.</td>
-            <td>Claude · PubMedBERT</td>
-          </tr>
-          <tr>
-            <td class="time"><strong>Day 2</strong><br />Data layer</td>
-            <td><strong>AI-coded fetchers: sequence, structure, known actives.</strong> Pull clean data from UniProt, the PDB, and ChEMBL.</td>
-            <td>Cursor / Antigravity · Biopython · RDKit</td>
-          </tr>
-          <tr>
-            <td class="time"><strong>Day 3</strong><br />Knowledge engine</td>
-            <td><strong>RAG + agent target brief (pocket, chemotypes).</strong> Give the pipeline a memory that reads the literature and writes a brief.</td>
-            <td>LangChain + ChromaDB · LangGraph</td>
-          </tr>
-          <tr>
-            <td class="time"><strong>Day 4</strong><br />Target prep</td>
-            <td><strong>Annotated target + defined binding pocket.</strong> Characterise the protein and prepare a structure that is ready to dock.</td>
-            <td>ESM-2 · ColabFold</td>
-          </tr>
-          <tr>
-            <td class="time"><strong>Day 5</strong><br />Hit finding</td>
-            <td><strong>Generated molecules → docked → ranked hit list.</strong> Generate candidates, dock them to the pocket, and rank them.</td>
-            <td>REINVENT4 · DiffDock · RDKit</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="sx-wrap">
+        <table class="sx">
+          <thead>
+            <tr>
+              <th class="sx-time">Stage</th>
+              <th>What you build</th>
+              <th class="sx-tools">Tools</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="sx-time"><span class="sx-stage">Day 1</span><br />Target brief</td>
+              <td><span class="sx-title">Literature-mined target dossier + known actives.</span><span
+                  class="sx-desc">Frame the target and seed a list of known active compounds.</span></td>
+              <td class="sx-tools">Claude · PubMedBERT</td>
+            </tr>
+            <tr>
+              <td class="sx-time"><span class="sx-stage">Day 2</span><br />Data layer</td>
+              <td><span class="sx-title">AI-coded fetchers: sequence, structure, known actives.</span><span
+                  class="sx-desc">Pull clean data from UniProt, the PDB, and ChEMBL.</span></td>
+              <td class="sx-tools">Cursor / Antigravity · Biopython · RDKit</td>
+            </tr>
+            <tr>
+              <td class="sx-time"><span class="sx-stage">Day 3</span><br />Knowledge engine</td>
+              <td><span class="sx-title">RAG + agent target brief (pocket, chemotypes).</span><span class="sx-desc">Give
+                  the pipeline a memory that reads the literature and writes a brief.</span></td>
+              <td class="sx-tools">LangChain + ChromaDB · LangGraph</td>
+            </tr>
+            <tr>
+              <td class="sx-time"><span class="sx-stage">Day 4</span><br />Target prep</td>
+              <td><span class="sx-title">Annotated target + defined binding pocket.</span><span
+                  class="sx-desc">Characterise the protein and prepare a structure that is ready to dock.</span></td>
+              <td class="sx-tools">ESM-2 · ColabFold</td>
+            </tr>
+            <tr>
+              <td class="sx-time"><span class="sx-stage">Day 5</span><br />Hit finding</td>
+              <td><span class="sx-title">Generated molecules → docked → ranked hit list.</span><span
+                  class="sx-desc">Generate candidates, dock them to the pocket, and rank them.</span></td>
+              <td class="sx-tools">REINVENT4 · DiffDock · RDKit</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </section>
 
@@ -115,16 +147,38 @@
   <section class="section" id="schedule">
     <div class="wrap">
       <p class="eyebrow">Daily schedule</p>
-      <table class="tbl">
-        <thead><tr><th>Time</th><th>Activity</th></tr></thead>
-        <tbody>
-          <tr><td class="time">09:30-11:30</td><td>Session A: lecture + hands-on</td></tr>
-          <tr><td class="time">11:30-11:45</td><td>Tea break</td></tr>
-          <tr><td class="time">11:45-13:45</td><td>Session B: lecture + hands-on</td></tr>
-          <tr><td class="time">13:45-14:30</td><td>Lunch</td></tr>
-          <tr><td class="time">14:30-16:30</td><td>Session C: lecture + hands-on</td></tr>
-        </tbody>
-      </table>
+      <div class="sx-wrap">
+        <table class="sx">
+          <thead>
+            <tr>
+              <th class="sx-time">Time</th>
+              <th>Activity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="sx-time">09:30-11:30</td>
+              <td><span class="sx-desc">Session A: lecture + hands-on</span></td>
+            </tr>
+            <tr>
+              <td class="sx-time">11:30-11:45</td>
+              <td><span class="sx-desc">Tea break</span></td>
+            </tr>
+            <tr>
+              <td class="sx-time">11:45-13:45</td>
+              <td><span class="sx-desc">Session B: lecture + hands-on</span></td>
+            </tr>
+            <tr>
+              <td class="sx-time">13:45-14:30</td>
+              <td><span class="sx-desc">Lunch</span></td>
+            </tr>
+            <tr>
+              <td class="sx-time">14:30-16:30</td>
+              <td><span class="sx-desc">Session C: lecture + hands-on</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <p class="note">Contact hours/day = 6 → total = 30 over 5 days (breaks excluded).</p>
     </div>
   </section>
@@ -193,23 +247,55 @@
       </div>
 
       <h3 style="margin-top:2rem">Prerequisites</h3>
-      <table class="tbl">
-        <tbody>
-          <tr><td>Basic understanding of molecular biology and bioinformatics.</td></tr>
-          <tr><td>Basic Python: variables, loops, functions, installing packages.</td></tr>
-          <tr><td>Familiarity with Jupyter / Colab notebooks. No prior cheminformatics needed.</td></tr>
-          <tr><td>A Google account and a Hugging Face account (for model weights).</td></tr>
-        </tbody>
-      </table>
+      <div class="sx-wrap">
+        <table class="sx">
+          <tbody>
+            <tr>
+              <td><span class="sx-desc">Basic understanding of molecular biology and bioinformatics.</span></td>
+            </tr>
+            <tr>
+              <td><span class="sx-desc">Basic Python: variables, loops, functions, installing packages.</span></td>
+            </tr>
+            <tr>
+              <td><span class="sx-desc">Familiarity with Jupyter / Colab notebooks. No prior cheminformatics needed.</span></td>
+            </tr>
+            <tr>
+              <td><span class="sx-desc">A Google account and a Hugging Face account (for model weights).</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <h3 style="margin-top:2.25rem">Pre-workshop requirements</h3>
-      <div class="deflist">
-        <div class="row"><dt>Compute</dt><dd>A GPU (incl. NVIDIA H200) so ESM-2, DiffDock and ColabFold run live; cached outputs as a time backup.</dd></div>
-        <div class="row"><dt>LLM access</dt><dd>Claude API key (Pro plan); Gemini free tier as a no-cost fallback.</dd></div>
-        <div class="row"><dt>AI IDE</dt><dd>Cursor or Google Antigravity (free tiers are enough; both drive frontier models for you).</dd></div>
-        <div class="row"><dt>Model access</dt><dd>Hugging Face account for ESM-2 weights.</dd></div>
-        <div class="row"><dt>Python env</dt><dd>Python 3.10+, conda/venv; torch, transformers, fair-esm, langchain, langgraph, chromadb, biopython, rdkit; REINVENT4; DiffDock deps.</dd></div>
-        <div class="row"><dt>Data / APIs</dt><dd>UniProt, RCSB PDB, ChEMBL, NCBI E-utilities; a shared target dataset folder.</dd></div>
+      <div class="sx-wrap">
+        <table class="sx">
+          <tbody>
+            <tr>
+              <td><span class="sx-title">Compute</span></td>
+              <td><span class="sx-desc">A GPU (incl. NVIDIA H200) so ESM-2, DiffDock and ColabFold run live; cached outputs as a time backup.</span></td>
+            </tr>
+            <tr>
+              <td><span class="sx-title">LLM access</span></td>
+              <td><span class="sx-desc">Claude API key (Pro plan); Gemini free tier as a no-cost fallback.</span></td>
+            </tr>
+            <tr>
+              <td><span class="sx-title">AI IDE</span></td>
+              <td><span class="sx-desc">Cursor or Google Antigravity (free tiers are enough; both drive frontier models for you).</span></td>
+            </tr>
+            <tr>
+              <td><span class="sx-title">Model access</span></td>
+              <td><span class="sx-desc">Hugging Face account for ESM-2 weights.</span></td>
+            </tr>
+            <tr>
+              <td><span class="sx-title">Python env</span></td>
+              <td><span class="sx-desc">Python 3.10+, conda/venv; torch, transformers, fair-esm, langchain, langgraph, chromadb, biopython, rdkit; REINVENT4; DiffDock deps.</span></td>
+            </tr>
+            <tr>
+              <td><span class="sx-title">Data / APIs</span></td>
+              <td><span class="sx-desc">UniProt, RCSB PDB, ChEMBL, NCBI E-utilities; a shared target dataset folder.</span></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
@@ -224,11 +310,27 @@
           one stage a day. At the end you have a working pipeline, a ranked hit list with scores, and
           a short demo.</p>
       </div>
-      <div class="deflist">
-        <div class="row"><dt>Attendance</dt><dd>Presence across the five days.</dd></div>
-        <div class="row"><dt>Daily labs</dt><dd>Each session delivers its pipeline stage (Stages 1-5).</dd></div>
-        <div class="row"><dt>Capstone</dt><dd>Integrated pipeline + ranked hits + presentation.</dd></div>
-        <div class="row"><dt>Certificate</dt><dd>Issued on attendance and capstone completion.</dd></div>
+      <div class="sx-wrap">
+        <table class="sx">
+          <tbody>
+            <tr>
+              <td><span class="sx-title">Attendance</span></td>
+              <td><span class="sx-desc">Presence across the five days.</span></td>
+            </tr>
+            <tr>
+              <td><span class="sx-title">Daily labs</span></td>
+              <td><span class="sx-desc">Each session delivers its pipeline stage (Stages 1-5).</span></td>
+            </tr>
+            <tr>
+              <td><span class="sx-title">Capstone</span></td>
+              <td><span class="sx-desc">Integrated pipeline + ranked hits + presentation.</span></td>
+            </tr>
+            <tr>
+              <td><span class="sx-title">Certificate</span></td>
+              <td><span class="sx-desc">Issued on attendance and capstone completion.</span></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div class="prose" style="margin-top:1.25rem">
         <p>More than any single tool, we hope the shape of the whole thing sticks. Then you can take
@@ -259,4 +361,5 @@
   </footer>
 
 </body>
+
 </html>
