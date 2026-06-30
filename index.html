@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="home">
 
   <header class="nav">
     <div class="nav-inner">
@@ -30,8 +30,9 @@
     <div class="wrap">
       <p class="eyebrow">Faculty Development Programme · 5 days / 30 contact hours</p>
       <h1>AI-Native Bioinformatics, Computational Biology &amp; Drug Discovery</h1>
-      <p class="lead">A hands-on programme where each session adds one stage to a single working
-        pipeline, from a protein target to a ranked list of candidate molecules.</p>
+      <p class="lead">Hands-on from the first hour. Each session adds one stage to a single
+        pipeline. You start with a protein target and finish with a ranked list of candidate
+        molecules.</p>
       <div class="meta-line">
         <span><strong>Dept. of Computational and Data Sciences</strong>, IISc Bangalore</span>
         <span class="sep">·</span>
@@ -52,11 +53,11 @@
       <p class="eyebrow">Overview</p>
       <div class="prose">
         <p>Most workshops tour a dozen tools and hope a few stick. We do the opposite. Everyone
-          builds one pipeline, one stage a day, so each new idea has somewhere to live. By Friday,
-          every team has generated molecules, docked them, and ranked them.</p>
-        <p>We pick one tool per job, the best free option, so the whole room runs the same stack.
-          Each session is a short lecture plus a lab. The worked example is <strong>EGFR</strong>
-          in non-small-cell lung cancer, but teams can bring their own target.</p>
+          builds one pipeline, one stage a day. Every new idea has somewhere to land. By Friday your
+          team has made molecules, docked them, and ranked them.</p>
+        <p>We pick one tool per job, the best free one. The whole room runs the same stack. Each
+          session is a short talk, then a lab. Our worked example is <strong>EGFR</strong> in lung
+          cancer. Bring your own target if you would rather.</p>
       </div>
       <div class="deflist">
         <div class="row"><dt>Mode</dt><dd>A short lecture plus a hands-on lab, every session.</dd></div>
@@ -72,41 +73,41 @@
     <div class="wrap">
       <p class="eyebrow">The capstone pipeline</p>
       <h2>Target → Hit</h2>
-      <p class="lead prose">The map we come back to all week. Each stage hands off to the next,
-        from a target name to a ranked hit list.</p>
+      <p class="lead prose">This is the map we keep coming back to. Each stage hands the work to the
+        next. A target name goes in. A ranked hit list comes out.</p>
 
-      <ol class="pipeline">
-        <li class="stage">
-          <span class="stage-day">Day 1 · Target brief</span>
-          <h3>Literature-mined target dossier + known actives</h3>
-          <p>Frame the target and seed a list of known active compounds.</p>
-          <p class="tools">Claude · PubMedBERT</p>
-        </li>
-        <li class="stage">
-          <span class="stage-day">Day 2 · Data layer</span>
-          <h3>AI-coded fetchers: sequence, structure, known actives</h3>
-          <p>Write the code that pulls clean data from UniProt, the PDB, and ChEMBL.</p>
-          <p class="tools">Cursor / Antigravity · Biopython · RDKit</p>
-        </li>
-        <li class="stage">
-          <span class="stage-day">Day 3 · Knowledge engine</span>
-          <h3>RAG + agent target brief (pocket, chemotypes)</h3>
-          <p>Give the pipeline a memory that reads the literature and writes a brief.</p>
-          <p class="tools">LangChain + ChromaDB · LangGraph</p>
-        </li>
-        <li class="stage">
-          <span class="stage-day">Day 4 · Target prep</span>
-          <h3>Annotated target + defined binding pocket</h3>
-          <p>Characterise the protein and prepare a structure that is ready to dock.</p>
-          <p class="tools">ESM-2 · ColabFold</p>
-        </li>
-        <li class="stage">
-          <span class="stage-day">Day 5 · Hit finding</span>
-          <h3>Generated molecules → docked → ranked hit list</h3>
-          <p>Generate candidates, dock them to the pocket, and rank them.</p>
-          <p class="tools">REINVENT4 · DiffDock · RDKit</p>
-        </li>
-      </ol>
+      <table class="tbl pipeline-tbl">
+        <thead>
+          <tr><th>Stage</th><th>What you build</th><th>Tools</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="time"><strong>Day 1</strong><br />Target brief</td>
+            <td><strong>Literature-mined target dossier + known actives.</strong> Frame the target and seed a list of known active compounds.</td>
+            <td>Claude · PubMedBERT</td>
+          </tr>
+          <tr>
+            <td class="time"><strong>Day 2</strong><br />Data layer</td>
+            <td><strong>AI-coded fetchers: sequence, structure, known actives.</strong> Pull clean data from UniProt, the PDB, and ChEMBL.</td>
+            <td>Cursor / Antigravity · Biopython · RDKit</td>
+          </tr>
+          <tr>
+            <td class="time"><strong>Day 3</strong><br />Knowledge engine</td>
+            <td><strong>RAG + agent target brief (pocket, chemotypes).</strong> Give the pipeline a memory that reads the literature and writes a brief.</td>
+            <td>LangChain + ChromaDB · LangGraph</td>
+          </tr>
+          <tr>
+            <td class="time"><strong>Day 4</strong><br />Target prep</td>
+            <td><strong>Annotated target + defined binding pocket.</strong> Characterise the protein and prepare a structure that is ready to dock.</td>
+            <td>ESM-2 · ColabFold</td>
+          </tr>
+          <tr>
+            <td class="time"><strong>Day 5</strong><br />Hit finding</td>
+            <td><strong>Generated molecules → docked → ranked hit list.</strong> Generate candidates, dock them to the pocket, and rank them.</td>
+            <td>REINVENT4 · DiffDock · RDKit</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </section>
 
@@ -114,7 +115,6 @@
   <section class="section" id="schedule">
     <div class="wrap">
       <p class="eyebrow">Daily schedule</p>
-      <h2>Six contact hours a day</h2>
       <table class="tbl">
         <thead><tr><th>Time</th><th>Activity</th></tr></thead>
         <tbody>
@@ -134,7 +134,7 @@
     <div class="wrap">
       <p class="eyebrow">Curriculum</p>
       <h2>Five days, one pipeline</h2>
-      <p class="lead prose">Each day delivers one stage. Open a day for its sessions, tools, and
+      <p class="lead prose">Each day delivers one stage. Open a day to see its sessions, tools, and
         what your team builds.</p>
 
       <div class="cards">
@@ -188,8 +188,8 @@
       <p class="eyebrow">Before the programme</p>
       <h2>Prerequisites &amp; setup</h2>
       <div class="prose">
-        <p>The labs assume a little Python. No cheminformatics background needed. Twenty minutes of
-          setup beforehand keeps the room moving.</p>
+        <p>You'll want a little Python going in. No cheminformatics is assumed. Do the twenty minutes
+          of setup beforehand, and we start on the labs instead of fighting installs.</p>
       </div>
 
       <h3 style="margin-top:2rem">Prerequisites</h3>
@@ -220,9 +220,9 @@
       <p class="eyebrow">Capstone &amp; assessment</p>
       <h2>One pipeline, built cumulatively</h2>
       <div class="prose">
-        <p>The capstone runs through the whole week: build the Target to Hit pipeline for a target
-          you choose. You assemble it one stage a day. The deliverable is a working pipeline, a
-          ranked hit list with docking scores, and a short demo.</p>
+        <p>The capstone runs all week. You build the Target to Hit pipeline for a target you pick,
+          one stage a day. At the end you have a working pipeline, a ranked hit list with scores, and
+          a short demo.</p>
       </div>
       <div class="deflist">
         <div class="row"><dt>Attendance</dt><dd>Presence across the five days.</dd></div>
@@ -230,10 +230,9 @@
         <div class="row"><dt>Capstone</dt><dd>Integrated pipeline + ranked hits + presentation.</dd></div>
         <div class="row"><dt>Certificate</dt><dd>Issued on attendance and capstone completion.</dd></div>
       </div>
-      <div class="callout">
-        <p class="eyebrow">In one line</p>
-        <p>More than any single tool, we want you to leave seeing how the pieces fit, and confident
-          enough to teach this to your own students.</p>
+      <div class="prose" style="margin-top:1.25rem">
+        <p>More than any single tool, we hope the shape of the whole thing sticks. Then you can take
+          it back to your own students.</p>
       </div>
     </div>
   </section>

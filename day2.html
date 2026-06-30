@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="day">
 
   <header class="nav">
     <div class="nav-inner">
@@ -29,9 +29,9 @@
     <div class="wrap">
       <p class="eyebrow">Day 2 · Stage 2: Data layer</p>
       <h1>Build the Data Layer</h1>
-      <p class="lead prose">With a target in hand, build the plumbing: code that fetches sequences,
-        structures, and known compounds. Lean on an AI coding assistant (Cursor, Antigravity, or
-        Copilot) for the boilerplate, and spend your attention on keeping the data clean.</p>
+      <p class="lead prose">Now build the plumbing. You need code that fetches sequences, structures,
+        and known compounds. Let an AI assistant write the boilerplate, whether that is Cursor,
+        Antigravity, or Copilot. You spend your attention on keeping the data clean.</p>
       <div class="meta-line">
         <span><strong>Theme</strong> AI-assisted programming</span>
         <span class="sep">·</span>
@@ -44,68 +44,42 @@
 
   <section class="section">
     <div class="wrap">
-      <div class="kicker-rule"></div>
-
-      <article class="session">
-        <div class="session-head">
-          <span class="session-tag">Session 4</span>
-          <span class="session-time">09:30-11:30</span>
-        </div>
-        <h3>AI coding assistants</h3>
-        <p class="prose">Prompt-to-code, prompt-to-pipeline, AI debugging, and using an LLM to
-          review your own code. Vibe coding done well.</p>
-        <div class="tags">
-          <span class="tag tool">Cursor / Antigravity</span>
-          <span class="tag">Prompt-to-code</span>
-          <span class="tag">AI debugging</span>
-          <span class="tag">LLM code review</span>
-        </div>
-        <div class="handson">
-          <strong>Hands-on</strong>
-          Scaffold the capstone repo with AI; write the first UniProt fetch script.
-        </div>
-      </article>
-
-      <article class="session">
-        <div class="session-head">
-          <span class="session-tag">Session 5</span>
-          <span class="session-time">11:45-13:45</span>
-        </div>
-        <h3>Generating I/O code</h3>
-        <p class="prose">UniProt and NCBI downloaders, PDB fetching, ChEMBL queries, FASTA parsing,
-          and SMILES handling, written with AI and grounded in Biopython and RDKit.</p>
-        <div class="tags">
-          <span class="tag tool">Biopython</span>
-          <span class="tag tool">RDKit</span>
-          <span class="tag">UniProt / NCBI</span>
-          <span class="tag">RCSB PDB</span>
-          <span class="tag">ChEMBL</span>
-        </div>
-        <div class="handson">
-          <strong>Hands-on · Stage 2</strong>
-          AI-generate fetchers for sequence, structure (PDB) and known actives (ChEMBL) → clean data tables.
-        </div>
-      </article>
-
-      <article class="session">
-        <div class="session-head">
-          <span class="session-tag">Session 6</span>
-          <span class="session-time">14:30-16:30</span>
-        </div>
-        <h3>LLM APIs &amp; function calling</h3>
-        <p class="prose">Wrap your fetchers as callable tools and let an LLM run the workflow. The
-          step from scripts you run by hand to an assistant that runs them.</p>
-        <div class="tags">
-          <span class="tag tool">Claude API</span>
-          <span class="tag">Function calling</span>
-          <span class="tag">Tool use</span>
-          <span class="tag">Orchestration</span>
-        </div>
-        <div class="handson">
-          <strong>Hands-on</strong>
-          Wrap fetchers as callable tools; build an LLM assistant that drives data collection end-to-end.
-        </div>
-      </article>
+      <div class="sx-wrap">
+        <table class="sx">
+          <thead>
+            <tr>
+              <th class="sx-n">#</th>
+              <th class="sx-time">Time</th>
+              <th>Session</th>
+              <th class="sx-tools">Tools</th>
+              <th>Hands-on</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="sx-n">4</td>
+              <td class="sx-time">09:30-11:30</td>
+              <td><span class="sx-title">AI coding assistants</span><span class="sx-desc">Prompt-to-code, prompt-to-pipeline, AI debugging, and using an LLM to review your own code. Vibe coding done well.</span></td>
+              <td class="sx-tools">Cursor / Antigravity · Prompt-to-code · AI debugging · LLM code review</td>
+              <td class="sx-hands">Scaffold the capstone repo with AI; write the first UniProt fetch script.</td>
+            </tr>
+            <tr>
+              <td class="sx-n">5</td>
+              <td class="sx-time">11:45-13:45</td>
+              <td><span class="sx-title">Generating I/O code</span><span class="sx-desc">UniProt and NCBI downloaders, PDB fetching, ChEMBL queries, FASTA parsing, and SMILES handling, written with AI and grounded in Biopython and RDKit.</span></td>
+              <td class="sx-tools">Biopython · RDKit · UniProt / NCBI · RCSB PDB · ChEMBL</td>
+              <td class="sx-hands"><span class="sx-stage">Stage 2.</span> AI-generate fetchers for sequence, structure (PDB), and known actives (ChEMBL) into clean data tables.</td>
+            </tr>
+            <tr>
+              <td class="sx-n">6</td>
+              <td class="sx-time">14:30-16:30</td>
+              <td><span class="sx-title">LLM APIs &amp; function calling</span><span class="sx-desc">Wrap your fetchers as callable tools and let an LLM run the workflow. The step from scripts you run by hand to an assistant that runs them.</span></td>
+              <td class="sx-tools">Claude API · Function calling · Tool use · Orchestration</td>
+              <td class="sx-hands">Wrap fetchers as callable tools; build an LLM assistant that drives data collection end-to-end.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <div class="callout" id="outcomes">
         <p class="eyebrow">Learning outcome</p>

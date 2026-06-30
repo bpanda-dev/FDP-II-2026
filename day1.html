@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="day">
 
   <header class="nav">
     <div class="nav-inner">
@@ -29,9 +29,9 @@
     <div class="wrap">
       <p class="eyebrow">Day 1 · Stage 1: Target brief</p>
       <h1>Foundations &amp; Target Framing</h1>
-      <p class="lead prose">Get your bearings and frame the problem. Set up the tools, then put an
-        LLM to work turning a protein target into a clear, structured brief. By the end of the day
-        your team has a target, a dossier, and a first list of known active compounds.</p>
+      <p class="lead prose">Day one is about getting your bearings. Set up the tools. Then put an LLM
+        to work, turning a protein target into a clear, structured brief. By the end of the day you
+        have a target, a dossier, and a first list of known actives.</p>
       <div class="meta-line">
         <span><strong>Theme</strong> LLMs + prompt engineering</span>
         <span class="sep">·</span>
@@ -44,68 +44,42 @@
 
   <section class="section">
     <div class="wrap">
-      <div class="kicker-rule"></div>
-
-      <article class="session">
-        <div class="session-head">
-          <span class="session-tag">Session 1</span>
-          <span class="session-time">09:30-11:30</span>
-        </div>
-        <h3>Evolution to AI-native bioinformatics</h3>
-        <p class="prose">Foundation models and the gen-AI landscape (GPT, Claude, Gemini), plus an
-          overview of the Target to Hit pipeline we build all week.</p>
-        <div class="tags">
-          <span class="tag tool">Claude</span>
-          <span class="tag">Foundation models</span>
-          <span class="tag">Gen-AI landscape</span>
-          <span class="tag">Pipeline overview</span>
-        </div>
-        <div class="handson">
-          <strong>Hands-on</strong>
-          Set up GPU and API keys; choose a target; the LLM drafts a structured target card.
-        </div>
-      </article>
-
-      <article class="session">
-        <div class="session-head">
-          <span class="session-tag">Session 2</span>
-          <span class="session-time">11:45-13:45</span>
-        </div>
-        <h3>Prompt-engineering principles</h3>
-        <p class="prose">Zero- and few-shot prompting, chain-of-thought, structured JSON output,
-          and how to tell a good prompt from a lucky one.</p>
-        <div class="tags">
-          <span class="tag tool">Claude</span>
-          <span class="tag">Zero / few-shot</span>
-          <span class="tag">Chain-of-thought</span>
-          <span class="tag">Structured output</span>
-          <span class="tag">Prompt evaluation</span>
-        </div>
-        <div class="handson">
-          <strong>Hands-on · Stage 1</strong>
-          Prompts for target biology, disease link and pathways → a validated target dossier (JSON).
-        </div>
-      </article>
-
-      <article class="session">
-        <div class="session-head">
-          <span class="session-tag">Session 3</span>
-          <span class="session-time">14:30-16:30</span>
-        </div>
-        <h3>Literature mining &amp; knowledge extraction</h3>
-        <p class="prose">Mine the literature for drug-target and gene-disease relations, and use
-          biomedical embeddings to search by meaning, not keywords.</p>
-        <div class="tags">
-          <span class="tag tool">Claude</span>
-          <span class="tag tool">PubMedBERT</span>
-          <span class="tag">Relation extraction</span>
-          <span class="tag">Embeddings</span>
-        </div>
-        <div class="handson">
-          <strong>Hands-on</strong>
-          Extract known inhibitors, chemotypes and binding info from abstracts → seed "known actives" list.
-        </div>
-      </article>
+      <div class="sx-wrap">
+        <table class="sx">
+          <thead>
+            <tr>
+              <th class="sx-n">#</th>
+              <th class="sx-time">Time</th>
+              <th>Session</th>
+              <th class="sx-tools">Tools</th>
+              <th>Hands-on</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="sx-n">1</td>
+              <td class="sx-time">09:30-11:30</td>
+              <td><span class="sx-title">Evolution to AI-native bioinformatics</span><span class="sx-desc">Foundation models and the gen-AI landscape (GPT, Claude, Gemini), plus an overview of the Target to Hit pipeline.</span></td>
+              <td class="sx-tools">Claude · Foundation models · Gen-AI landscape · Pipeline overview</td>
+              <td class="sx-hands">Set up GPU and API keys; choose a target; the LLM drafts a structured target card.</td>
+            </tr>
+            <tr>
+              <td class="sx-n">2</td>
+              <td class="sx-time">11:45-13:45</td>
+              <td><span class="sx-title">Prompt-engineering principles</span><span class="sx-desc">Zero- and few-shot prompting, chain-of-thought, structured JSON output, and how to tell a good prompt from a lucky one.</span></td>
+              <td class="sx-tools">Claude · Zero / few-shot · Chain-of-thought · Structured output · Prompt evaluation</td>
+              <td class="sx-hands"><span class="sx-stage">Stage 1.</span> Prompts for target biology, disease link, and pathways produce a validated target dossier (JSON).</td>
+            </tr>
+            <tr>
+              <td class="sx-n">3</td>
+              <td class="sx-time">14:30-16:30</td>
+              <td><span class="sx-title">Literature mining &amp; knowledge extraction</span><span class="sx-desc">Mine the literature for drug-target and gene-disease relations, and use biomedical embeddings to search by meaning, not keywords.</span></td>
+              <td class="sx-tools">Claude · PubMedBERT · Relation extraction · Embeddings</td>
+              <td class="sx-hands">Extract known inhibitors, chemotypes, and binding info from abstracts to seed a "known actives" list.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <div class="callout" id="outcomes">
         <p class="eyebrow">Learning outcome</p>

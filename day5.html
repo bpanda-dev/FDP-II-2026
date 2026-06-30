@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="day">
 
   <header class="nav">
     <div class="nav-inner">
@@ -29,8 +29,8 @@
     <div class="wrap">
       <p class="eyebrow">Day 5 · Stage 5: Hit finding</p>
       <h1>Generate, Dock, Rank + Capstone</h1>
-      <p class="lead prose">Today it comes together. Generate fresh molecules, dock and rank them
-        against your pocket, then wire the whole week into one pipeline and show it. REINVENT4 makes
+      <p class="lead prose">Today it all comes together. Generate fresh molecules. Dock and rank them
+        against your pocket. Then wire the whole week into one pipeline and show it. REINVENT4 makes
         the molecules; DiffDock docks them.</p>
       <div class="meta-line">
         <span><strong>Theme</strong> Generative chemistry</span>
@@ -44,66 +44,42 @@
 
   <section class="section">
     <div class="wrap">
-      <div class="kicker-rule"></div>
-
-      <article class="session">
-        <div class="session-head">
-          <span class="session-tag">Session 13</span>
-          <span class="session-time">09:30-11:30</span>
-        </div>
-        <h3>Molecular generative models</h3>
-        <p class="prose">Molecular transformers, VAEs, GANs, diffusion, and reinforcement learning
-          for molecules, then filtering candidates for drug-likeness.</p>
-        <div class="tags">
-          <span class="tag tool">REINVENT4</span>
-          <span class="tag tool">RDKit</span>
-          <span class="tag">VAEs · GANs · diffusion</span>
-          <span class="tag">RL for molecules</span>
-        </div>
-        <div class="handson">
-          <strong>Hands-on</strong>
-          Generate candidate molecules (optionally scaffold-conditioned); filter by Lipinski / QED.
-        </div>
-      </article>
-
-      <article class="session">
-        <div class="session-head">
-          <span class="session-tag">Session 14</span>
-          <span class="session-time">11:45-13:45</span>
-        </div>
-        <h3>Structure-based docking</h3>
-        <p class="prose">Dock candidates into the pocket, score the poses, and screen for ADMET and
-          safety liabilities.</p>
-        <div class="tags">
-          <span class="tag tool">DiffDock</span>
-          <span class="tag tool">RDKit</span>
-          <span class="tag">Scoring</span>
-          <span class="tag">ADMET / safety</span>
-        </div>
-        <div class="handson">
-          <strong>Hands-on</strong>
-          Dock candidates to the pocket; score and rank; flag ADMET liabilities.
-        </div>
-      </article>
-
-      <article class="session">
-        <div class="session-head">
-          <span class="session-tag">Session 15</span>
-          <span class="session-time">14:30-16:30</span>
-        </div>
-        <h3>End-to-end assembly</h3>
-        <p class="prose">Wire the full pipeline together: target brief, target and pocket
-          (ESM-2 + ColabFold), molecule generation, docking, scoring. Then present it.</p>
-        <div class="tags">
-          <span class="tag tool">Integrated stack</span>
-          <span class="tag">End-to-end pipeline</span>
-          <span class="tag">Presentations</span>
-        </div>
-        <div class="handson">
-          <strong>Hands-on · Stage 5</strong>
-          Run the full pipeline on the team’s target → ranked hits + a short presentation.
-        </div>
-      </article>
+      <div class="sx-wrap">
+        <table class="sx">
+          <thead>
+            <tr>
+              <th class="sx-n">#</th>
+              <th class="sx-time">Time</th>
+              <th>Session</th>
+              <th class="sx-tools">Tools</th>
+              <th>Hands-on</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="sx-n">13</td>
+              <td class="sx-time">09:30-11:30</td>
+              <td><span class="sx-title">Molecular generative models</span><span class="sx-desc">Molecular transformers, VAEs, GANs, diffusion, and reinforcement learning for molecules, then filtering candidates for drug-likeness.</span></td>
+              <td class="sx-tools">REINVENT4 · RDKit · VAEs · GANs · diffusion · RL for molecules</td>
+              <td class="sx-hands">Generate candidate molecules (optionally scaffold-conditioned); filter by Lipinski / QED.</td>
+            </tr>
+            <tr>
+              <td class="sx-n">14</td>
+              <td class="sx-time">11:45-13:45</td>
+              <td><span class="sx-title">Structure-based docking</span><span class="sx-desc">Dock candidates into the pocket, score the poses, and screen for ADMET and safety liabilities.</span></td>
+              <td class="sx-tools">DiffDock · RDKit · Scoring · ADMET / safety</td>
+              <td class="sx-hands">Dock candidates to the pocket; score and rank; flag ADMET liabilities.</td>
+            </tr>
+            <tr>
+              <td class="sx-n">15</td>
+              <td class="sx-time">14:30-16:30</td>
+              <td><span class="sx-title">End-to-end assembly</span><span class="sx-desc">Wire the full pipeline together: target brief, target and pocket (ESM-2 + ColabFold), molecule generation, docking, scoring. Then present it.</span></td>
+              <td class="sx-tools">Integrated stack · End-to-end pipeline · Presentations</td>
+              <td class="sx-hands"><span class="sx-stage">Stage 5.</span> Run the full pipeline on the team's target to produce ranked hits and a short presentation.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <div class="callout" id="outcomes">
         <p class="eyebrow">Learning outcome</p>
@@ -113,8 +89,8 @@
 
       <div class="callout" style="margin-top:1rem">
         <p class="eyebrow">Capstone</p>
-        <p>The week's deliverable: a working Target to Hit pipeline for your target, with a ranked
-          hit list and docking scores, plus a short demo. Built one stage a day.</p>
+        <p>The week's deliverable: a working Target to Hit pipeline for your target. It comes with a
+          ranked hit list, docking scores, and a short demo. Built one stage a day.</p>
       </div>
     </div>
   </section>

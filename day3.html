@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="day">
 
   <header class="nav">
     <div class="nav-inner">
@@ -29,9 +29,9 @@
     <div class="wrap">
       <p class="eyebrow">Day 3 · Stage 3: Knowledge engine</p>
       <h1>Knowledge Engine for the Target</h1>
-      <p class="lead prose">Raw data is not knowledge yet. Today you give the pipeline a memory: a
-        retrieval system that reads the literature, and an agent that pulls it together into a
-        focused brief on the binding pocket and chemistry.</p>
+      <p class="lead prose">Raw data is not knowledge yet. Today you give the pipeline a memory. A
+        retrieval system reads the literature. An agent pulls it together into a focused brief on the
+        binding pocket and the chemistry.</p>
       <div class="meta-line">
         <span><strong>Theme</strong> RAG &amp; agents</span>
         <span class="sep">·</span>
@@ -44,66 +44,42 @@
 
   <section class="section">
     <div class="wrap">
-      <div class="kicker-rule"></div>
-
-      <article class="session">
-        <div class="session-head">
-          <span class="session-tag">Session 7</span>
-          <span class="session-time">09:30-11:30</span>
-        </div>
-        <h3>RAG architecture</h3>
-        <p class="prose">Embeddings, vector databases, and semantic search: the building blocks of
-          RAG.</p>
-        <div class="tags">
-          <span class="tag tool">LangChain</span>
-          <span class="tag tool">ChromaDB</span>
-          <span class="tag">Embeddings</span>
-          <span class="tag">Vector databases</span>
-          <span class="tag">Semantic search</span>
-        </div>
-        <div class="handson">
-          <strong>Hands-on</strong>
-          Build a vector store over the target’s literature; a minimal RAG question-and-answer loop.
-        </div>
-      </article>
-
-      <article class="session">
-        <div class="session-head">
-          <span class="session-tag">Session 8</span>
-          <span class="session-time">11:45-13:45</span>
-        </div>
-        <h3>RAG over biological databases</h3>
-        <p class="prose">Retrieval across PubMed, UniProt, ChEMBL, ClinVar, OMIM, and PharmGKB to
-          build a knowledge assistant for your target.</p>
-        <div class="tags">
-          <span class="tag tool">LangChain + bio APIs</span>
-          <span class="tag">PubMed · UniProt · ChEMBL</span>
-          <span class="tag">ClinVar · OMIM · PharmGKB</span>
-        </div>
-        <div class="handson">
-          <strong>Hands-on</strong>
-          A target knowledge assistant: retrieve binding site, known chemotypes and resistance mutations.
-        </div>
-      </article>
-
-      <article class="session">
-        <div class="session-head">
-          <span class="session-tag">Session 9</span>
-          <span class="session-time">14:30-16:30</span>
-        </div>
-        <h3>Agentic AI</h3>
-        <p class="prose">Multi-agent retrieval and analysis, and automated synthesis. Agents that
-          research, reason, and write.</p>
-        <div class="tags">
-          <span class="tag tool">LangGraph</span>
-          <span class="tag">Multi-agent</span>
-          <span class="tag">Automated synthesis</span>
-        </div>
-        <div class="handson">
-          <strong>Hands-on · Stage 3</strong>
-          A research agent outputs a structured target brief: pocket, chemotypes and constraints.
-        </div>
-      </article>
+      <div class="sx-wrap">
+        <table class="sx">
+          <thead>
+            <tr>
+              <th class="sx-n">#</th>
+              <th class="sx-time">Time</th>
+              <th>Session</th>
+              <th class="sx-tools">Tools</th>
+              <th>Hands-on</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="sx-n">7</td>
+              <td class="sx-time">09:30-11:30</td>
+              <td><span class="sx-title">RAG architecture</span><span class="sx-desc">Embeddings, vector databases, and semantic search: the building blocks of RAG.</span></td>
+              <td class="sx-tools">LangChain · ChromaDB · Embeddings · Vector databases · Semantic search</td>
+              <td class="sx-hands">Build a vector store over the target's literature; a minimal RAG question-and-answer loop.</td>
+            </tr>
+            <tr>
+              <td class="sx-n">8</td>
+              <td class="sx-time">11:45-13:45</td>
+              <td><span class="sx-title">RAG over biological databases</span><span class="sx-desc">Retrieval across PubMed, UniProt, ChEMBL, ClinVar, OMIM, and PharmGKB to build a knowledge assistant for your target.</span></td>
+              <td class="sx-tools">LangChain + bio APIs · PubMed · UniProt · ChEMBL · ClinVar · OMIM · PharmGKB</td>
+              <td class="sx-hands">A target knowledge assistant: retrieve binding site, known chemotypes, and resistance mutations.</td>
+            </tr>
+            <tr>
+              <td class="sx-n">9</td>
+              <td class="sx-time">14:30-16:30</td>
+              <td><span class="sx-title">Agentic AI</span><span class="sx-desc">Multi-agent retrieval and analysis, and automated synthesis. Agents that research, reason, and write.</span></td>
+              <td class="sx-tools">LangGraph · Multi-agent · Automated synthesis</td>
+              <td class="sx-hands"><span class="sx-stage">Stage 3.</span> A research agent outputs a structured target brief: pocket, chemotypes, and constraints.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <div class="callout" id="outcomes">
         <p class="eyebrow">Learning outcome</p>

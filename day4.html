@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="day">
 
   <header class="nav">
     <div class="nav-inner">
@@ -29,10 +29,10 @@
     <div class="wrap">
       <p class="eyebrow">Day 4 · Stage 4: Target prep</p>
       <h1>Characterize the Target</h1>
-      <p class="lead prose">Now the target itself. With a protein language model, characterize it,
-        annotate its domains, find the pocket, and score which mutations matter. Then prepare a
-        clean structure for docking. We are on small molecules this week, so protein-design tools
-        sit this one out.</p>
+      <p class="lead prose">Now the target itself. Use a protein language model to characterize it.
+        Annotate the domains, find the pocket, and score which mutations matter. Then prep a clean
+        structure for docking. We stay on small molecules this week, so protein-design tools sit this
+        one out.</p>
       <div class="meta-line">
         <span><strong>Theme</strong> Protein foundation models</span>
         <span class="sep">·</span>
@@ -45,66 +45,42 @@
 
   <section class="section">
     <div class="wrap">
-      <div class="kicker-rule"></div>
-
-      <article class="session">
-        <div class="session-head">
-          <span class="session-tag">Session 10</span>
-          <span class="session-time">09:30-11:30</span>
-        </div>
-        <h3>Transformer architecture for proteins</h3>
-        <p class="prose">Protein foundation models and sequence embeddings: how a transformer
-          trained on millions of sequences learns protein language.</p>
-        <div class="tags">
-          <span class="tag tool">ESM-2</span>
-          <span class="tag">Protein foundation models</span>
-          <span class="tag">Sequence embeddings</span>
-        </div>
-        <div class="handson">
-          <strong>Hands-on</strong>
-          Load the model on GPU (H200); embed the target sequence.
-        </div>
-      </article>
-
-      <article class="session">
-        <div class="session-head">
-          <span class="session-tag">Session 11</span>
-          <span class="session-time">11:45-13:45</span>
-        </div>
-        <h3>Functional annotation</h3>
-        <p class="prose">Find the active site, predict mutation effects and resistance, and score
-          it all zero-shot from the model.</p>
-        <div class="tags">
-          <span class="tag tool">ESM-2</span>
-          <span class="tag">Active-site ID</span>
-          <span class="tag">Mutation effects</span>
-          <span class="tag">Zero-shot scoring</span>
-        </div>
-        <div class="handson">
-          <strong>Hands-on</strong>
-          Annotate domains; locate the pocket region; score key and resistance mutations.
-        </div>
-      </article>
-
-      <article class="session">
-        <div class="session-head">
-          <span class="session-tag">Session 12</span>
-          <span class="session-time">14:30-16:30</span>
-        </div>
-        <h3>Receptor structure prep for docking</h3>
-        <p class="prose">Prepare a receptor for docking, using ColabFold when there is no
-          experimental structure, and define the binding pocket.</p>
-        <div class="tags">
-          <span class="tag tool">ColabFold</span>
-          <span class="tag tool">RDKit</span>
-          <span class="tag">PDB</span>
-          <span class="tag">Pocket definition</span>
-        </div>
-        <div class="handson">
-          <strong>Hands-on · Stage 4</strong>
-          Prepare the receptor (PDB or ColabFold); define the pocket → a docking-ready target.
-        </div>
-      </article>
+      <div class="sx-wrap">
+        <table class="sx">
+          <thead>
+            <tr>
+              <th class="sx-n">#</th>
+              <th class="sx-time">Time</th>
+              <th>Session</th>
+              <th class="sx-tools">Tools</th>
+              <th>Hands-on</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="sx-n">10</td>
+              <td class="sx-time">09:30-11:30</td>
+              <td><span class="sx-title">Transformer architecture for proteins</span><span class="sx-desc">Protein foundation models and sequence embeddings: how a transformer trained on millions of sequences learns protein language.</span></td>
+              <td class="sx-tools">ESM-2 · Protein foundation models · Sequence embeddings</td>
+              <td class="sx-hands">Load the model on GPU (H200); embed the target sequence.</td>
+            </tr>
+            <tr>
+              <td class="sx-n">11</td>
+              <td class="sx-time">11:45-13:45</td>
+              <td><span class="sx-title">Functional annotation</span><span class="sx-desc">Find the active site, predict mutation effects and resistance, and score it all zero-shot from the model.</span></td>
+              <td class="sx-tools">ESM-2 · Active-site ID · Mutation effects · Zero-shot scoring</td>
+              <td class="sx-hands">Annotate domains; locate the pocket region; score key and resistance mutations.</td>
+            </tr>
+            <tr>
+              <td class="sx-n">12</td>
+              <td class="sx-time">14:30-16:30</td>
+              <td><span class="sx-title">Receptor structure prep for docking</span><span class="sx-desc">Prepare a receptor for docking, using ColabFold when there is no experimental structure, and define the binding pocket.</span></td>
+              <td class="sx-tools">ColabFold · RDKit · PDB · Pocket definition</td>
+              <td class="sx-hands"><span class="sx-stage">Stage 4.</span> Prepare the receptor (PDB or ColabFold); define the pocket to get a docking-ready target.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <div class="callout" id="outcomes">
         <p class="eyebrow">Learning outcome</p>
